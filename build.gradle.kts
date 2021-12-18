@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.util.regex.Pattern.compile
 
 plugins {
     id("org.springframework.boot") version "2.6.1"
@@ -24,8 +25,8 @@ dependencies {
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
-    implementation("org.apache.kafka:kafka-clients:2.8.0")
+    // https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
+    implementation("org.springframework.kafka:spring-kafka:2.8.0")
 }
 
 tasks.withType<KotlinCompile> {
