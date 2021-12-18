@@ -15,7 +15,7 @@ class KafkaProducer(
             log.info("======== Start Producer ========")
             log.info("sendMessage : $valueMessage")
             kafkaTemplate.send("create-spring-topic", valueMessage)
-            log.info("======== Close Producer ========")
+            log.info("======== End Producer ========")
         } catch (e: Exception) {
             e.printStackTrace()
         }

@@ -2,7 +2,6 @@ package com.application.simplekafka.controller
 
 import com.application.simplekafka.consumer.KafkaConsumer
 import com.application.simplekafka.producer.KafkaProducer
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestParam
